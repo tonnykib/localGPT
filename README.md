@@ -120,7 +120,7 @@ DOCUMENT_MAP = {
 Run the following command to ingest all the data.
 
 If you have `cuda` setup on your system.
-
+conda activate localGPT
 ```shell
 python3 ingest.py
 ```

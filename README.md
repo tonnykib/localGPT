@@ -122,7 +122,7 @@ Run the following command to ingest all the data.
 If you have `cuda` setup on your system.
 
 ```shell
-python ingest.py
+python3 ingest.py
 ```
 You will see an output like this:
 <img width="1110" alt="Screenshot 2023-09-14 at 3 36 27 PM" src="https://github.com/PromtEngineer/localGPT/assets/134474669/c9274e9a-842c-49b9-8d95-606c3d80011f">
@@ -157,7 +157,7 @@ Note: When you run this for the first time, it will need internet access to down
 In order to chat with your documents, run the following command (by default, it will run on `cuda`).
 
 ```shell
-python run_localGPT.py
+python3 run_localGPT.py
 ```
 You can also specify the device type just like `ingest.py`
 
@@ -195,7 +195,7 @@ Another option is to enable chat history. ***Note***: This is disabled by defaul
 python run_localGPT.py --use_history
 ```
 
-You can store user questions and model responses with flag `--save_qa` into a csv file `/local_chat_history/qa_log.csv`. Every interaction will be stored. 
+You can store user questions and model responses with flag `--save_qa` into a csv file `/local_chat_history/qa_log.csv`. Every interaction will be stored.
 
 ```shell
 python run_localGPT.py --save_qa
@@ -214,7 +214,7 @@ python run_localGPT.py --save_qa
 
 4. Navigate to the `/LOCALGPT` directory.
 
-5. Run the following command `python run_localGPT_API.py`. The API should being to run.
+5. Run the following command `python3 run_localGPT_API.py`. The API should being to run.
 
 6. Wait until everything has loaded in. You should see something like `INFO:werkzeug:Press CTRL+C to quit`.
 
@@ -222,7 +222,7 @@ python run_localGPT.py --save_qa
 
 8. Navigate to the `/LOCALGPT/localGPTUI` directory.
 
-9. Run the command `python localGPTUI.py`.
+9. Run the command `python3 localGPTUI.py`.
 
 10. Open up a web browser and go the address `http://localhost:5111/`.
 
